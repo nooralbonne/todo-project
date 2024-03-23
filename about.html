@@ -1,81 +1,172 @@
 <!DOCTYPE html>
-<html lang = "en"> 
-    
-<head>
-    <title> TO DO </title>
-<meta charset='utf-8'>  <!-- for add all language-->
-<meta name ="discription" content="to do list">
-<meta name ="keyword" content="to do list, checklist">
-<meta name ="author" content="noor albonne">
-<meta http-equiv="refresh" content="100" url="https://web.telegram.org/k/">
-</heads>
+<html lang="en">
 
-<style>
-    .logo-container {
-       display: flex;
-       align-items: center;
-    }
-.logo-container img {
-   width: 50px; /* Adjust the width as needed */
-   margin-right: 10px; /* Add some space between the logo and text */
-}
-</style> 
+<head>
+    <meta charset="UTF-8">
+    <title>TO DO</title>
+    <meta name="description" content="To do list">
+    <meta name="keywords" content="to do list, checklist">
+    <meta name="author" content="Noor Albonne">
+    <meta http-equiv="refresh" content="100" url="https://web.telegram.org/k/">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        /* Logo Container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .logo-container img {
+            width: 50px;
+            margin-right: 10px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0;
+            color: #333;
+            font-size: 24px;
+        }
+
+        /* Form */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
 <body>
-    <div class="logo-container">
-        <img src="https://th.bing.com/th/id/OIP.TdXT50WMusppdKNaooO61QAAAA?pid=ImgDet&w=256&h=256&rs=1" alt="logo for to do list website">
-        <h1> TO DO </h1>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html">INDEX</a>
+        <a href="about.html">ABOUT US</a>
     </div>
 
-    <!-- attribut like :align -- in css
-    <img title="this is logo " width="50" src="https://th.bing.com/th/id/OIP.TdXT50WMusppdKNaooO61QAAAA?pid=ImgDet&w=256&h=256&rs=1" alt="logo for to do list website">
-    <h1> TO DO </h1> -->
-    <!-- to open on new tab -->
-    <pre>
-                                                                                                                                             <a target="_blank"  href="index.html">INDEX</a> <a target="_blank"  href="about.html">ABOUT US</a>       </pre>
-    
-    <!-- to add line -->
-    <hr>
-    <!-- to add space -->
-    <br>
-    <pre> </pre><img title="this is myphoto " width="40" src="https://snipsupload.s3.amazonaws.com/upload/photos/2022/03/TgYxtfCh5jKWiZijY76m_06_3ea1a8365a7a57ba3d969620a2b8fec0_image.png" alt="myphoto">  <p><b>I AM NOOR ALBONNE</b></p>    
-    <p><i>Balqa University Computer Science graduate, interested in using technology to solve practical challenges and contribute to the tech community</i></p></pre>
-   
-    <!-- to make form -->
+    <!-- Logo and Title -->
+    <div class="logo-container">
+        <img src="https://th.bing.com/th/id/OIP.TdXT50WMusppdKNaooO61QAAAA?pid=ImgDet&w=256&h=256&rs=1" alt="logo for to do list website">
+        <h1>TO DO</h1>
+    </div>
+
+    <!-- Form -->
     <form action="test.php" method="get">
         <fieldset>
-        <legend>YOUR QUISTION</legend>
-        <div><label for="name">YOUR NAME</label>
-            <input id="name" type="text" placeholder="EX:noor yasser" required name="name"></div>
-        <div>
-            <label for="email">YOUR EMAIL</label>
-            <input id="email" type="email" placeholder="EX: wecf1@gmail.com" required name="email">
-        </div>
-        <div>
-            <label for="MESSAGE">YOUR MESSAGE</label>
-            <input id="MESSAGE" type="text" placeholder="YOUR MESSAGE" required>
-        </div>
-        <div>
-            <input type="submit" value="SEND">
-        </div>
-    </form>
+            <legend>YOUR QUESTION</legend>
+            <div>
+                <label for="name">YOUR NAME</label>
+                <input id="name" type="text" placeholder="e.g. Noor Yasser" required name="name">
+            </div>
+            <div>
+                <label for="email">YOUR EMAIL</label>
+                <input id="email" type="email" placeholder="e.g. wecf1@gmail.com" required name="email">
+            </div>
+            <div>
+                <label for="message">YOUR MESSAGE</label>
+                <input id="message" type="text" placeholder="YOUR MESSAGE" required>
+            </div>
+            <div>
+                <input type="submit" value="SEND">
+            </div>
         </fieldset>
-    <!-- Where form information go?-->
-</body>
-<style>
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-  }
-</style>
+    </form>
 
-<footer>
-    <p><small>" The author placed a copyright notice at the bottom of each page of their to-do list website to assert their ownership of the creative work."</small></p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p><small>©[2024][NOOR ALBONNE].All Rights Reserved.</small></p>
+    </footer>
+</body>
 
 </html>
