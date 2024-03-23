@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
     <title>TO DO</title>
+    <meta charset="UTF-8">
     <meta name="description" content="To do list">
     <meta name="keywords" content="to do list, checklist">
     <meta name="author" content="Noor Albonne">
@@ -59,6 +59,18 @@
             margin: 0;
             color: #333;
             font-size: 24px;
+        }
+
+        /* Bio Container */
+        .bio-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .bio-container img {
+            width: 40px;
+            border-radius: 50%;
+            margin-bottom: 10px;
         }
 
         /* Form */
@@ -141,17 +153,24 @@
         <h1>TO DO</h1>
     </div>
 
+    <!-- Bio -->
+    <div class="bio-container">
+        <img src="https://snipsupload.s3.amazonaws.com/upload/photos/2022/03/TgYxtfCh5jKWiZijY76m_06_3ea1a8365a7a57ba3d969620a2b8fec0_image.png" alt="myphoto">
+        <p><b>I AM NOOR ALBONNE</b></p>
+        <p><i>Balqa University Computer Science graduate, interested in using technology to solve practical challenges and contribute to the tech community</i></p>
+    </div>
+
     <!-- Form -->
     <form action="test.php" method="get">
         <fieldset>
             <legend>YOUR QUESTION</legend>
             <div>
                 <label for="name">YOUR NAME</label>
-                <input id="name" type="text" placeholder="e.g. Noor Yasser" required name="name">
+                <input id="name" type="text" placeholder="EX: Noor Yasser" required name="name">
             </div>
             <div>
                 <label for="email">YOUR EMAIL</label>
-                <input id="email" type="email" placeholder="e.g. wecf1@gmail.com" required name="email">
+                <input id="email" type="email" placeholder="EX: wecf1@gmail.com" required name="email">
             </div>
             <div>
                 <label for="message">YOUR MESSAGE</label>
