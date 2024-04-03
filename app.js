@@ -24,9 +24,9 @@ if (welcomingMessage) {
 } 
 
 function displayWelcomeMessage(){
-    if (Gender == "Male" || "male") {
+    if (Gender === "Male" || Gender === "male") {
         alert("Hello, Mr " + Name + "!");
-    } else if (Gender == "Female" || "female") {
+    } else if (Gender ===  "Female" ||Gender ===  "female") {
         alert("Hello, Ms " + Name + "!");
     } else {
         alert("Hello " + Name + "!");
