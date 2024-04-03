@@ -1,0 +1,129 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #4CAF50; /* Green navbar */
+    overflow: hidden;
+}
+
+.navbar a,
+a {
+    float: left;
+    display: block;
+    color: #fff; /* White navbar links */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #45a049; /* Darker green hover color */
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.logo-container img {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+h1 {
+    margin: 0;
+    color: #4CAF50; /* Green heading */
+    font-size: 24px;
+}
+
+/* Bio Container */
+.bio-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bio-container img {
+    width: 40px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Green legend */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Green submit button */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green hover color */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark gray footer */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
