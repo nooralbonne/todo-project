@@ -34,9 +34,51 @@ function displayWelcomeMessage(){
 }
 
 
+// ===============lab- 06 ==============
 
+let answerArray = ["yes", "no", "invalid"];
 
+// =======first  Question========
+var work = prompt("Do You Like Your Job? (Yes/No)");
+function workQuestion() {
+    if (work === "") {
+        console.log(answerArray[2]);
+    } else if (work === "yes" || work === "Yes" || work === "YES") {
+        console.log(answerArray[0]);
+    } else if (work === "no" || work === "No" || work === "NO") {
+        console.log(answerArray[1]);
+    } else {
+        console.log(answerArray[2]);
+    }
+}
+workQuestion();
 
+// ==========second  Question==========
+var code = prompt("Do You Hate Your code? (yes/No)");
+function codeQuestion() {
+    if (code === "") {
+        console.log(answerArray[2]);
+    } else if (code === "yes" || code === "Yes" || code === "YES") {
+        console.log(answerArray[0]);
+    } else if (code === "no" || code === "No" || code === "NO") {
+        console.log(answerArray[1]);
+    } else {
+        console.log(answerArray[2]);
+    }
+}
+codeQuestion();
 
-
-
+// ==========third  Question==========
+var cat = prompt("Do You Have A cat? (yes/No)");
+function catQuestion() {
+    if (cat === "") {
+        console.log(answerArray[2]);
+    } else if (cat === "yes" || cat === "Yes" || cat === "YES") {
+        console.log(answerArray[0]);
+    } else if (cat === "no" || cat === "No" || cat === "NO") {
+        console.log(answerArray[1]);
+    } else {
+        console.log(answerArray[2]);
+    }
+}
+catQuestion();
